@@ -1,0 +1,21 @@
+nano data.txt
+isi file: 
+risma 19 taknik_Informatika
+abdu 21 teknik_Informatika
+ayesha 19 Teknik_informatika
+dinda 20 taknik_Informatika
+
+cara menampilkan isi file data.txt:
+cat data.txt
+cat praktikum.14awk
+kalau mau diedit: nano praktikum.14awk
+contoh isi: BEGIN {
+    print "=== DATA MAHASISWA ==="
+}
+{
+    print "Nama:", $1, "Umur:", $2, "Jurusan:", $3
+}
+END {
+    print "=== SELESAI ==="
+}
+menjalankan praktikum: awk -f praktikum.14awk data.txt --lint
